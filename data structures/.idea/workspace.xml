@@ -14,12 +14,17 @@
     <SUITE FILE_PATH="coverage/data_structures$2__1_.coverage" NAME="2 (1) Coverage Results" MODIFIED="1521120243927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/priority_queue" />
     <SUITE FILE_PATH="coverage/data_structures$5.coverage" NAME="5 Coverage Results" MODIFIED="1521057780050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/simple data structures" />
     <SUITE FILE_PATH="coverage/data_structures$test.coverage" NAME="test Coverage Results" MODIFIED="1521019751659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/data_structures$1__2_.coverage" NAME="1 (2) Coverage Results" MODIFIED="1521541224552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hash_tables" />
     <SUITE FILE_PATH="coverage/data_structures$2.coverage" NAME="2 Coverage Results" MODIFIED="1519564341199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/simple data structures" />
+=======
+    <SUITE FILE_PATH="coverage/data_structures$2.coverage" NAME="2 Coverage Results" MODIFIED="1521553081488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hashtables" />
+>>>>>>> 95132d27645e3b97066114dda44ef2695a60e087
     <SUITE FILE_PATH="coverage/data_structures$1__1_.coverage" NAME="1 (1) Coverage Results" MODIFIED="1521021046854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/priority_queue" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/disjoint_set_union/1.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -45,6 +50,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
               <caret line="310" column="0" lean-forward="false" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
+=======
+      <file leaf-file-name="2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hashtables/2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="713">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+>>>>>>> 95132d27645e3b97066114dda44ef2695a60e087
               <folding />
             </state>
           </provider>
@@ -76,7 +88,11 @@
         <option value="$PROJECT_DIR$/priority_queue/2.py" />
         <option value="$PROJECT_DIR$/uncrossed/1.py" />
         <option value="$PROJECT_DIR$/disjoint_set_union/1.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/hash_tables/1.py" />
+=======
+        <option value="$PROJECT_DIR$/hashtables/2.py" />
+>>>>>>> 95132d27645e3b97066114dda44ef2695a60e087
       </list>
     </option>
   </component>
@@ -86,9 +102,16 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="1" fullScreen="true">
     <option name="width" value="3844" />
     <option name="height" value="1053" />
+=======
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-1" />
+    <option name="width" value="1282" />
+    <option name="height" value="1413" />
+>>>>>>> 95132d27645e3b97066114dda44ef2695a60e087
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -122,7 +145,11 @@
             <path>
               <item name="data structures" type="b2602c69:ProjectViewProjectNode" />
               <item name="data structures" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="hash_tables" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="hashtables" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 95132d27645e3b97066114dda44ef2695a60e087
             </path>
           </expand>
           <select />
@@ -148,7 +175,11 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.1 (2)">
+=======
+  <component name="RunManager" selected="Python.2">
+>>>>>>> 95132d27645e3b97066114dda44ef2695a60e087
     <configuration name="1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -206,20 +237,32 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+    <configuration name="2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> 95132d27645e3b97066114dda44ef2695a60e087
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+<<<<<<< HEAD
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/priority_queue" />
+=======
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hashtables" />
+>>>>>>> 95132d27645e3b97066114dda44ef2695a60e087
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="data structures" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/priority_queue/2.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hashtables/2.py" />
+>>>>>>> 95132d27645e3b97066114dda44ef2695a60e087
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -269,11 +312,19 @@
       <item index="2" class="java.lang.String" itemvalue="Python.5" />
       <item index="3" class="java.lang.String" itemvalue="Python.2 (1)" />
       <item index="4" class="java.lang.String" itemvalue="Python.1" />
+<<<<<<< HEAD
       <item index="5" class="java.lang.String" itemvalue="Python.1 (2)" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.1 (2)" />
+=======
+      <item index="5" class="java.lang.String" itemvalue="Python.2" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.2" />
+>>>>>>> 95132d27645e3b97066114dda44ef2695a60e087
         <item index="1" class="java.lang.String" itemvalue="Python.1" />
         <item index="2" class="java.lang.String" itemvalue="Python.2 (1)" />
         <item index="3" class="java.lang.String" itemvalue="Python.5" />
@@ -298,21 +349,39 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-1" y="-40" width="2562" height="1744" extended-state="1" />
     <editor active="true" />
+=======
+    <frame x="-1" y="0" width="2562" height="1413" extended-state="7" />
+>>>>>>> 95132d27645e3b97066114dda44ef2695a60e087
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3985649" sideWeight="0.5024311" order="7" side_tool="true" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3043185" sideWeight="0.49837926" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19570503" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4036335" sideWeight="0.49837926" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3491311" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18575974" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> 95132d27645e3b97066114dda44ef2695a60e087
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+=======
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39731437" sideWeight="0.49756888" order="5" side_tool="false" content_ui="tabs" />
+>>>>>>> 95132d27645e3b97066114dda44ef2695a60e087
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3974359" sideWeight="0.49756888" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -354,12 +423,31 @@
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+<<<<<<< HEAD
           <url>file://$PROJECT_DIR$/hash_tables/1.py</url>
           <line>13</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="45" />
+=======
+          <url>file://$PROJECT_DIR$/hashtables/2.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/hashtables/2.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/hashtables/2.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="34" />
+>>>>>>> 95132d27645e3b97066114dda44ef2695a60e087
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -416,6 +504,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
           <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/disjoint_set_union/1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/disjoint_set_union/1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -656,12 +760,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/disjoint_set_union/1.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1558">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+=======
+        <state relative-caret-position="806">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+>>>>>>> 95132d27645e3b97066114dda44ef2695a60e087
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -674,6 +784,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1202">
           <caret line="104" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/hashtables/2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+>>>>>>> 95132d27645e3b97066114dda44ef2695a60e087
           <folding />
         </state>
       </provider>
