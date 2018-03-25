@@ -1,33 +1,46 @@
 from random import randint
 
+p = 20
+x = 5
 
-def get_hash(text: str, x: int, p: int):
+
+def get_hash(text: str):
     hash = 0
+    p = 20
+    x = 5
     for i in range(0, len(text)):
         hash += (ord(text[i]) * (x ** i)) % p
+        em3 = (ord(text[i]) * (x ** i)) % p
     return hash
 
-def get_second_hash(first_hash: int, x_max: int, x: int, old_symbol: str, new_symbol: str):
-    hash = (first_hash - ord(old_symbol) * x_max) * x + ord(new_symbol)
+
+def get_second_hash(previous_hash: int, previous_str: str, current_str: str):
+    p = 20
+    x = 5
+    previous_str_last_symbol_hash = (ord(previous_str[len(previous_str) - 1]) * (x ** (len(previous_str) - 1))) % p
+    new_str_first_symbol_hash = (ord(current_str[0]) * (x ** 0)) % p
+    hash = new_str_first_symbol_hash + (previous_hash - previous_str_last_symbol_hash) * x
+    return hash
 
 
 def rabin_karp_alg(pattern: str, text: str) -> None:
     if len(text) < len(pattern) or len(pattern) < 1:
         return
+    p = 20
+    x = 5
 
-    p = 1000007
-    x = randint(0, p)
     P = len(pattern)
-    x_max = (x ** (P - 1)) % p
-    last_hash = get_hash(text[P + 1:], x, p)
-    pattern_hash = get_hash(pattern, x, p)
-
+    em2 = text[len(text) - P:]
+    last_hash = get_hash(text[len(text) - P:])
+    pattern_hash = get_hash(pattern)
     hash_arr = [last_hash]
+
     for i in range(len(text) - P - 1, -1, -1):
         first_index = i
         last_index = i + P
-        current_text = text[first_index: last_index]
-        hash_arr.append(get_hash(text[first_index:last_index], x, p))
+        em = text[first_index:last_index]
+        new_hash = get_second_hash(hash_arr[len(hash_arr) - 1], text[first_index + 1:last_index + 1], text[first_index:last_index])
+        hash_arr.append(new_hash)
 
     for i in range(len(hash_arr) - 1, -1, -1):
         if hash_arr[i] == pattern_hash:
