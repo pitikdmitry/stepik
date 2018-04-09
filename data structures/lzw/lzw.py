@@ -1,16 +1,18 @@
 from bytes_string.bytes_string import BytesString
-letters = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхчшщъыьэюя"
+# symbols = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхчшщъыьэюя!@#$%^&*()1234567890,./<>?;:[]{}\'\"`~\n\r\t"
+symbols = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхчшщъыьэюя!@$%^&*()1234567890,./<>?;:[]{}\'\"`~\n\r\tAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz#"
+# letters = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхчшщъыьэюя"
+letters = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхчшщъыьэюяAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz"
 
-
-def fill_letters(text: str, table_of_keys: {}, current_index: int) -> int:
+def fill_first_letters(text: str, table_of_keys: {}, current_bit: int) -> int:
     for c in text:
         if c == "#":
             break
         elif c not in table_of_keys:
-            table_of_keys[c] = bin(current_index)
-            current_index += 1
+            table_of_keys[c] = bin(current_bit)
+            current_bit += 1
 
-    return current_index
+    return current_bit
 
 
 def fill_asccii(table_of_keys: {}, current_bit: int) -> int:
@@ -20,6 +22,17 @@ def fill_asccii(table_of_keys: {}, current_bit: int) -> int:
                 if c not in table_of_keys:
                     table_of_keys[c] = current_bit
                     current_bit += 1
+
+    return current_bit
+
+
+def fill_symbols(table_of_keys: {}, current_bit: int) -> int:
+    for c in symbols:
+        if c == "#":
+            break
+        elif c not in table_of_keys:
+            table_of_keys[c] = bin(current_bit)
+            current_bit += 1
 
     return current_bit
 
@@ -34,10 +47,14 @@ def encode_text(text: str, array_of_keys: {}, current_bit: int):
         if c not in letters:
             if current_text != "":
                 if current_text not in array_of_keys:
-                    array_of_keys[current_text] = current_bit
+                    array_of_keys[current_text] = bin(current_bit)
+                    current_bit += 1
                 coded_str += str(array_of_keys[current_text])
 
             if c != "#":
+                if c not in array_of_keys:
+                    array_of_keys[c] = bin(current_bit)
+                    current_bit += 1
                 coded_str += array_of_keys[c]   # добавляем в строку код пробела
                 current_text = ""
                 c = next(iterator)
@@ -91,7 +108,7 @@ def run_programm(text: str):
     table_of_keys = {}
     text += "#"
     current_bit = 0
-    current_bit = fill_letters(text, table_of_keys, current_bit)
+    current_bit = fill_symbols(table_of_keys, current_bit)
     coded_str = encode_text(text, table_of_keys, current_bit)
     decoded_str = decode_text(coded_str, table_of_keys)
     return coded_str, decoded_str
@@ -102,6 +119,6 @@ if __name__ == "__main__":
     text = input()
     text += "#"
     current_bit = 0
-    current_bit = fill_letters(text, table_of_keys, current_bit)
+    current_bit = fill_symbols(text, table_of_keys, current_bit)
     coded_str = encode_text(text, table_of_keys, current_bit)
     decode_text(coded_str, table_of_keys)

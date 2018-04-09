@@ -14,32 +14,41 @@ class LwzTest(unittest.TestCase):
 
         return text
 
-    def test_simple(self):
-        print("simple test: ")
-        input_str = "abacabadabacabae"
-        coded_str, decoded_str = run_programm(input_str)
-        self.assertEqual(input_str, decoded_str)
-        print("size input: " + str(sys.getsizeof(input_str)))
-        print("size coded: " + str(sys.getsizeof(coded_str)))
-        print("")
-
-    def test_with_space(self):
-        print("test with space: ")
-        input_str = "i went somewhere"
-        coded_str, decoded_str = run_programm(input_str)
-        self.assertEqual(input_str, decoded_str)
-        print("size input: " + str(sys.getsizeof(input_str)))
-        print("size coded: " + str(sys.getsizeof(coded_str)))
-        print("")
-
-    def test_big_str(self):
-        print("big str test: ")
-        input_str = ", и он начинал бредить."
-        coded_str, decoded_str = run_programm(input_str)
-        self.assertEqual(input_str, decoded_str)
-        print("size input: " + str(sys.getsizeof(input_str)))
-        print("size coded: " + str(sys.getsizeof(coded_str)))
-        print("")
+    # def test_simple(self):
+    #     print("simple test: ")
+    #     input_str = "abacabadabacabae"
+    #     coded_str, decoded_str = run_programm(input_str)
+    #     self.assertEqual(input_str, decoded_str)
+    #     print("size input: " + str(sys.getsizeof(input_str)))
+    #     print("size coded: " + str(sys.getsizeof(coded_str)))
+    #     print("")
+    #
+    # def test_with_space(self):
+    #     print("test with space: ")
+    #     input_str = "i went somewhere"
+    #     coded_str, decoded_str = run_programm(input_str)
+    #     self.assertEqual(input_str, decoded_str)
+    #     print("size input: " + str(sys.getsizeof(input_str)))
+    #     print("size coded: " + str(sys.getsizeof(coded_str)))
+    #     print("")
+    #
+    # def test_special_symbols(self):
+    #     print("test_special_symbols: ")
+    #     input_str = "\n\r\t;.,/12345679-098`"
+    #     coded_str, decoded_str = run_programm(input_str)
+    #     self.assertEqual(input_str, decoded_str)
+    #     print("size input: " + str(sys.getsizeof(input_str)))
+    #     print("size coded: " + str(sys.getsizeof(coded_str)))
+    #     print("")
+    #
+    # def test_big_str(self):
+    #     print("big str test: ")
+    #     input_str = ", и он начинал бредить."
+    #     coded_str, decoded_str = run_programm(input_str)
+    #     self.assertEqual(input_str, decoded_str)
+    #     print("size input: " + str(sys.getsizeof(input_str)))
+    #     print("size coded: " + str(sys.getsizeof(coded_str)))
+    #     print("")
 
     def test_all_files(self):
         dir = os.getcwd()
