@@ -8,11 +8,11 @@ class LwzTest(unittest.TestCase):
     def test_simple(self):
         print("")
         input_str = "abacabadabacabae"
-        coded_str, returned_str = run_programm(input_str)
-        self.assertEqual(input_str, returned_str)
-        print("size before: " + str(sys.getsizeof(input_str)))
-        print("size after: " + str(sys.getsizeof(coded_str)))
-        print("")
+        run_programm(input_str)
+        # self.assertEqual(input_str, returned_str)
+        # print("size before: " + str(sys.getsizeof(input_str)))
+        # print("size after: " + str(sys.getsizeof(coded_str)))
+        # print("")
 
     # def test_with_space(self):
     #     print("")
