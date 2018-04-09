@@ -1,35 +1,55 @@
 from .lzw import *
 import sys
+import os
 import unittest
 
 
 class LwzTest(unittest.TestCase):
 
-    def test_simple(self):
-        print("")
-        input_str = "abacabadabacabae"
-        run_programm(input_str)
-        # self.assertEqual(input_str, returned_str)
-        # print("size before: " + str(sys.getsizeof(input_str)))
-        # print("size after: " + str(sys.getsizeof(coded_str)))
-        # print("")
+    def get_str_from_filename(self, filename: str) -> str:
+        text = ""
+        with open(filename, 'r') as f:
+            for line in f:
+                text += line
 
-    # def test_with_space(self):
-    #     print("")
-    #     input_str = "abacaba" + " dabac, abae"
-    #     coded_str, returned_str = run_programm(input_str)
-    #     self.assertEqual(input_str, returned_str)
-    #     print("size before: " + str(sys.getsizeof(input_str)))
-    #     print("size after: " + str(sys.getsizeof(returned_str)))
-    #     print("")
-    #
-    # def test_big_str(self):
-    #     print("")
-    #     input_str = "abacarejkgnerkljgbrjeklbasaagavafcacafaafcaaaafvavabababbaba" + " dabac, abae"
-    #     coded_str, returned_str = run_programm(input_str)
-    #     self.assertEqual(input_str, returned_str)
-    #     print("size before: " + str(sys.getsizeof(input_str)))
-    #     print("size after: " + str(sys.getsizeof(coded_str)))
-    #     print("length before: " + str(len(input_str)))
-    #     print("length after: " + str(len(returned_str)))
-    #     print("")
+        return text
+
+    def test_simple(self):
+        print("simple test: ")
+        input_str = "abacabadabacabae"
+        coded_str, decoded_str = run_programm(input_str)
+        self.assertEqual(input_str, decoded_str)
+        print("size input: " + str(sys.getsizeof(input_str)))
+        print("size coded: " + str(sys.getsizeof(coded_str)))
+        print("")
+
+    def test_with_space(self):
+        print("test with space: ")
+        input_str = "i went somewhere"
+        coded_str, decoded_str = run_programm(input_str)
+        self.assertEqual(input_str, decoded_str)
+        print("size input: " + str(sys.getsizeof(input_str)))
+        print("size coded: " + str(sys.getsizeof(coded_str)))
+        print("")
+
+    def test_big_str(self):
+        print("big str test: ")
+        input_str = ", и он начинал бредить."
+        coded_str, decoded_str = run_programm(input_str)
+        self.assertEqual(input_str, decoded_str)
+        print("size input: " + str(sys.getsizeof(input_str)))
+        print("size coded: " + str(sys.getsizeof(coded_str)))
+        print("")
+
+    def test_all_files(self):
+        dir = os.getcwd()
+        for filename in os.listdir(os.getcwd()):
+            if filename[-4:] == ".txt":
+                header_str = str(filename) + " : "
+                print(header_str)
+                input_str = self.get_str_from_filename(filename)
+                coded_str, decoded_str = run_programm(input_str)
+                self.assertEqual(input_str, decoded_str)
+                print("size input: " + str(sys.getsizeof(input_str)))
+                print("size coded: " + str(sys.getsizeof(coded_str)))
+                print("")

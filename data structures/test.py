@@ -1,1 +1,2 @@
-print(bin(56), )
+
+print(ord("п"))

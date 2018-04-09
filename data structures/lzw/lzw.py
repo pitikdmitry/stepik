@@ -1,4 +1,5 @@
 from bytes_string.bytes_string import BytesString
+letters = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхчшщъыьэюя"
 
 
 def fill_letters(text: str, table_of_keys: {}, current_index: int) -> int:
@@ -30,10 +31,12 @@ def encode_text(text: str, array_of_keys: {}, current_bit: int):
     c = next(iterator)
 
     while True:
-        if c == " " or c == "," or c == "?" or c == "!" or c == "." or c == "#":
-            if current_text not in array_of_keys:
-                array_of_keys[current_text] = current_bit
-            coded_str += array_of_keys[current_text]
+        if c not in letters:
+            if current_text != "":
+                if current_text not in array_of_keys:
+                    array_of_keys[current_text] = current_bit
+                coded_str += str(array_of_keys[current_text])
+
             if c != "#":
                 coded_str += array_of_keys[c]   # добавляем в строку код пробела
                 current_text = ""
@@ -48,7 +51,6 @@ def encode_text(text: str, array_of_keys: {}, current_bit: int):
 
         else:
             coded_str += array_of_keys[current_text]
-            print(array_of_keys[current_text], end=" ")
             current_text += c
             array_of_keys[current_text] = bin(current_bit)
             current_bit += 1
@@ -91,10 +93,7 @@ def run_programm(text: str):
     current_bit = 0
     current_bit = fill_letters(text, table_of_keys, current_bit)
     coded_str = encode_text(text, table_of_keys, current_bit)
-    print(coded_str)
-
     decoded_str = decode_text(coded_str, table_of_keys)
-    print(decoded_str)
     return coded_str, decoded_str
 
 
