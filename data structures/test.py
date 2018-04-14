@@ -1,2 +1,1 @@
-
-print(ord("п"))
+print("\\")
