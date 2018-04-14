@@ -141,10 +141,51 @@ class Tree:
 
         return self._balance(node)
 
+    def _find_min(self, node: Node) -> Node:
+        if node.left is not None:
+            return self._find_min(node.left)
+        return node
+
+    def _remove_min(self, node: Node) -> Node:
+        if node.left is None:
+            return node.right
+        node.left = self._remove_min(node.left)
+        return self._balance(node)
+
+    def remove(self, key):
+        if self._root is None:
+            return
+        else:
+            self._root = self._remove(self._root, key)
+
+    def _remove(self, node: Node, key):
+        if node is None:
+            return None
+
+        if key < node.key:
+            node.left = self._remove(node.left, key)
+        elif key > node.key:
+            node.right = self._remove(node.right, key)
+        else:
+            a = node.left
+            b = node.right
+            node = None
+
+            if b is None:
+                return a
+
+            min = self._find_min(b)
+            min.right = self._remove_min(b)
+            min.left = a
+            return self._balance(min)
+
+        return self._balance(node)
+
 
 tree = Tree()
 for i in range(0, 10):
     tree.insert(i)
 
+tree.remove(5)
 # tree.in_order()
 tree.bfs(tree.root)
